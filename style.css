@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(20, 8, 8, 0.639);
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: repeat(3, 110px);
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ac7dc2;
+    color: white;
+}
+
+.cell:hover {
+    background-color: gray;
+    transform: scale(1.06);
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 110px);
+    grid-template-rows: repeat(1, 110px);
+}
+
+.rbtn {
+    width: 110px;
+    height: 70px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10%;
+    font-size: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.rbtn:hover {
+    background-color: gray;
+    transform: scale(1.06);
+}
+
+.win {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 110px);
+    grid-template-rows: repeat(1, 110px);
+}
+
+#winner {
+    width: 100px;
+    height: 80px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10%;
+    font-size: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: black;
+}
+
+#winner:hover {
+    background-color: gray;
+    transform: scale(1.06);
+}
+
+#new_game {
+    width: 100px;
+    height: 80px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10%;
+    font-size: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#new_game:hover {
+    background-color: gray;
+    transform: scale(1.06);
+}
+
+.hide {
+    display: none;
+}
